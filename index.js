@@ -20,6 +20,7 @@ module.exports = klass(function(options) {
 }).methods({
 
   request: function(options, then) {
+    var self = this;
     request.get({
       url: [
         this.host, this.path, '?', querystring.stringify(options)
