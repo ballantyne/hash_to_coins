@@ -2,7 +2,7 @@ hash_to_coins
 ------------
 
 
-This is a very simple api client that helps interact with the hash to coins mining pool api.  
+This is a very simple api client that helps interact with the [HashToCoins](http://hash-to-coins.com/index.php?page=register&rid=53579) mining pool api.  
 
 
 Installation
@@ -38,8 +38,6 @@ hashToCoins.setworkercurrency({worker: 'worker.name', coin: 'TIPS'}, function(er
 hashToCoins.getuserhashrate(function(err, data) {
   console.log(data);
 })
-
-
 
 ```
 
