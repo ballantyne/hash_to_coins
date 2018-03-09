@@ -26,13 +26,16 @@ module.exports = klass(function(options) {
         this.host, this.path, '?', querystring.stringify(options)
       ].join('')
     }, function(err, r, body) {
+      if (self.verbose) {
+        if (err != undefined) {
+          console.log(err);
+        }
+        console.log(body);
+      }
+      
       if (body != undefined) {
         body = JSON.parse(body);
       }
-      if (self.verbose) {
-        console.log(body);
-      }
-
       then(err, body);
     })  
   },
