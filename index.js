@@ -14,7 +14,7 @@ module.exports = klass(function(options) {
   }
 
   if (this.verbose == undefined) {
-    this.verbose = true;
+    this.verbose = false;
   }
 
 }).methods({
