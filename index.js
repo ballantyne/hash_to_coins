@@ -51,6 +51,15 @@ module.exports = klass(function(options) {
     }); 
   },
 
+  getuserworkersinfo: function(then) {
+    var options = {action: 'getuserworkersinfo'};
+    this.get(options, function(err, data) {
+      data = _.values(data.getuserworkersinfo.data);
+      then(err, data);
+    }); 
+  },
+
+
   getnetworksinfo: function(then) {
     var options = {action: 'getnetworksinfo'};
     this.get(options, function(err, data) {
