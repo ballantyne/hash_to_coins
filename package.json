@@ -1,6 +1,6 @@
 {
   "name": "hash_to_coins",
-  "version": "1.0.6",
+  "version": "1.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
